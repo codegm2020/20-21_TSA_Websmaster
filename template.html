@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> SFHS TSA </title>
+        <link rel="icon" href="images/favicon.png">
+        <link rel="stylesheet" type="text/css" href="baseSite.css">
+        <link rel="stylesheet" type="text/css"  href="calendar.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">  
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Varela+Round'>
+        <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">    
+        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato&amp;subset=latin,latin-ext'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body {
+                background-image: url("https://designwoop.com/uploads/2012/05/pattern_white_x0.5_pattern_vectorized_copy_2x-613x460.png");
+    background-repeat: repeat;
+            }
+            #chat {
+	font-size:40px;
+	border-color: white;
+	border-radius: 20px;
+	position: fixed;
+	bottom:10px;
+	right:10px;
+}
+/* Mobile Compatibility Check */
+@media only screen and (min-width: 300px) and (max-width: 1340px)  {
+  .remove {
+      display: none;
+  }
+  #main_title {
+    position: absolute; 
+    top:4vh; 
+    left: 12vh; 
+    color: white; 
+    font-weight: bold;
+    zoom: 240%;
+  }
+}
+/* Laptop Compatibility Check */
+@media only screen and (min-width:  1340px) and (min-height: 400px)  {
+    .remove {
+        display: block;
+    }
+    #do {
+        display: none;
+    }
+    #main_title {
+    position: absolute; 
+    top:7vh; 
+    left: 23vh; 
+    color: white; 
+    font-weight: bold;
+    zoom: 400%;
+  }
+}
+        </style>
+    </head>
+    <div id="remove" style="background-color: #0E355F; width: 100%; height: 100%;"></div>
+    <body style="display: none; ">
+
+            <div class="example3">
+                <nav class="navbar-primary navbar-static-top">
+                    <a class="navbar-brand" id="size" href="index.html">
+                        <div style="width: 30%; position: relative; left: -3%; top: -30px; z-index: 1004;" >
+                    </a>
+                    </div>
+                    <div style="position: relative; top:0;  left: -270px; width: 100000%;">
+                        <svg id="elem_fix1" style="opacity: 1;position: fixed;z-index: 1002;" height="250" width="12242">
+                            <polyline points="0,0 0,90 12241,150 12241,0"
+                                style="fill: white;stroke: pink;stroke-width:4" />
+                        </svg>
+                    
+                    </div>
+
+       
+                    <div id="navbar3" class="navbar-collapse collapse">
+                        <button id="do" style="font-size:40px; color: black; border: none; background: transparent; position: relative;top: 10px;" onclick="move()"> <i class="fa fa-home"></i></button>
+                        <script>
+                            function move() {
+                                window.location.href = "index.html";
+                            }
+                        </script>
+                        <ul  class="remove nav navbar-nav navbar-right">
+                            <li style="z-index: 10000;" ><a style="background-image: linear-gradient(180deg, rgba(0,0,0,0),rgba(0,0,0,0) 81%,pink 81.1%,pink 85%,rgba(0,0,0,0) 85.1%,rgba(0,0,0,0));font-weight: bold;"  onMouseOver="this.style.backgroundColor='transparent'"
+                                onMouseOut="this.style.color='#0E355F';this.style.backgroundColor='transparent'" href="index.html">Home</a></li>
+                            <!--<li><a  href="Officers.html">Officers&nbsp;&nbsp;</a></li>
+                                Webmaster  <li><a href="DrConnect/index.html">Company </a></li>-->
+                            <li class="dropdown">
+                                <a href="#" style="font-weight: bold;"  onMouseOver="this.style.backgroundColor='transparent'"
+                                    onMouseOut="this.style.color='#0E355F';this.style.backgroundColor='transparent'"  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Chapter <span class="caret"></span></a>
+                                <ul style="z-index: 1200" class="dropdown-menu" role="menu">
+                                    <li><a href="Chapter/Officers.html">Officers</a></li>
+                                    <li><a href="Chapter/Members.html">All Members</a></li>
+                                    <li><a href="Chapter/MeetingInfo.html">Meetings Info</a></li>
+                                    <li><a href="Chapter/FAQs.html">FAQs</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" style="font-weight: bold;"  onMouseOver="this.style.backgroundColor='transparent'"
+                                    onMouseOut="this.style.color='#0E355F';this.style.backgroundColor='transparent'"  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Competition<span class="caret"></span></a>
+                                <ul style="z-index: 1200" class="dropdown-menu" role="menu">
+                                    <li><a href="Competition/Levels.html">Conferences</a></li>
+                                    <li><a href="Competition/Timeline.html">Timeline</a></li>
+                                    <li class="divider"></li>
+                                    <li class="dropdown-header">Contest</li>
+                                    <li><a href="Competition/EventInformation.html">Event Information</a></li>
+                                    <li><a href="Competition/EventThemes.html">Event Themes</a></li>
+                                </ul>
+                            </li>
+                            <li style="z-index: 10000;" ><a style="font-weight: bold;"  onMouseOver="this.style.backgroundColor='transparent'"
+                                onMouseOut="this.style.color='#0E355F';this.style.backgroundColor='transparent'" href="https://forms.gle/1idUPFj6g75AyS2w7">Join Now</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <!--Video start-->
+                <section style="top: 90px;position: relative; width: 100%;">
+                    <video style="width: 100%;position: absolute; top:0;left:0;" playsinline autoplay muted loop>
+                        <source src="media/Video_Competition.mp4" type="video/mp4">
+                    </video>
+                    <h1 id="main_title"> Title</h1>
+                </section>
+               <!--Image start-->
+               <div style="position: relative; top: 900px; height: 800px;">
+                    Content
+               </div>
+               
+                    <svg class="remove" style="position: relative; top: 100vh " height="250" width="10000">
+                        <polygon points="0,250 10000,0 10000,250 0,250" style="fill:#0E355F;" />
+                    </svg>
+                    <div class="remove" style="color: white;background-color:#0E355F; top: 100vh;position: relative; width: 100%; height: 2px;"></div>
+                    </div>
+                    <!-- Site footer -->
+                    <footer style="position: relative; top: 100vh" class="remove site-footer">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6">
+                                    <h6>About</h6>
+                                    <p class="text-justify">TSA, standing for Technology Student Association, is a national student organization created to develop skills in science, mathematics, as well as business education. Further enhancing personal development, leadership, and STEM carrier opportunities.   </p>
+                                </div>
+                                <div class="col-xs-6 col-md-3">
+                                    <h6>Our Chapter</h6>
+                                    <ul class="footer-links">
+                                        <li><a href="Chapter/Officers.html">Officers</a></li>
+                                        <li><a href="Chapter/Members.html">All Members</a></li>
+                                        <li><a href="Chapter/MeetingInfo.html">Meeting Info</a></li>
+                                        <li><a href="Chapter/FAQs.html">FAQs</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-6 col-md-3">
+                                    <h6>Competition</h6>
+                                    <ul class="footer-links">
+                                        <li><a href="Competition/Levels.html">Conferences</a></li>
+                                        <li><a href="Competition/Timeline.html">Timeline</a></li>
+                                        <li><a href="Competition/EventInformation.html">Event Information</a></li>
+                                        <li><a href="Competition/EventThemes.html">Event Themes</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-8 col-sm-6 col-xs-12">
+                                    <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
+                                        <a href="index.html">SFHS TSA</a>.
+                                    </p>
+                                </div>
+                                <div class="col-md-4 col-sm-6 col-xs-12">
+                                    <ul style="left: 44%;position: relative;" class="social-icons">
+                                        <!-- <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                                            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>-->
+                                        <li><a class="dribbble" href="https://www.forsyth.k12.ga.us/Page/22491"><i class="fa fa-dribbble"></i></a></li>
+                                        <li><a class="linkedin" href="https://www.instagram.com/sfhs.tsa/"><i class="fa fa-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                    
+                </div>
+               
+            </div>
+            <!--Total-->
+            <button onclick="aDerv()" id="chat" style='z-index: 10000000;background-color: pink; color: white;'> <i class='fa fa-comments'></i></button>
+            <header  style="font-family: sans-serif;position: fixed; bottom: 68px; font-size: 15px;right: 7px;z-index: 1000000;background-color: white;font-weight: normal;">
+                <div style="display: none;" id="peekobot-container">  
+                <div id="peekobot-inner">
+                    <div id="peekobot"></div>
+                </div>
+                </div>
+            </header>
+        </claim>
+         <script>
+             let click = 0;
+             function aDerv() {
+                 click++;
+                 if(click % 2 == 1) {
+                     $("#peekobot-container").fadeIn();
+                 } else {
+                     $("#peekobot-container").fadeOut();
+                 }
+             }
+         </script>
+         <script src="bot.js"></script>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Load Script Imports-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+        <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://s.electerious.com/basicScroll/dist/basicScroll.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
