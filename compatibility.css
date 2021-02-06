@@ -11,17 +11,17 @@
 /* Laptop Compatibility Check */
 @media only screen and (min-width:  1340px) and (min-height: 400px)  {
 	#tab {
-		display: none;
+		display: block;
 	}
 	#laptop {
-		display: block;
+		display: none;
 	}
 	.content ul{
 	left: 30%;
 	position: relative;
 }
 #chat {
-	font-size:40px;
+	f	nt-size:40px;
 	border-color: white;
 	border-radius: 20px;
 	position: fixed;

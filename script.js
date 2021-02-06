@@ -60,7 +60,7 @@ function resize() {
 	var change = 0;
 	//First remove all stylesheets
 	if(document.getElementById("main_logo")) {
-		if(width < 1340) {
+		if(width < 134000) {
 			//Stuff for Mobile
 			$('link[rel=stylesheet]').remove();
 		addCss("../compatibility.css");
